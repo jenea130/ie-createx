@@ -1500,12 +1500,12 @@ li {
   }
 }
 
-.main-header__logo {
+.custom-logo-link {
   margin-right: 60px;
 }
 
 @media screen and (max-width: 576px) {
-  .main-header__logo {
+  .custom-logo-link {
     margin-right: 10px;
   }
 }
@@ -1586,43 +1586,43 @@ li {
   color: var(--accent);
 }
 
-.main-menu__item {
+.main-menu > li {
   margin-right: 40px;
 }
 
 @media screen and (max-width: 992px) {
-  .main-menu__item {
+  .main-menu > li {
     margin-right: 0;
     border-bottom: 1px solid rgba(124, 124, 124, 0.4);
   }
 }
 
 @media screen and (max-width: 992px) {
-  .main-menu__item:last-of-type {
+  .main-menu > li:last-of-type {
     border-bottom: none;
   }
 }
 
-.main-menu__link {
+.main-menu a {
   padding: 5px 0;
   transition: all .3s;
 }
 
-.main-menu__link.active,
-.main-menu__link:hover {
+.main-menu a.active,
+.main-menu a:hover {
   color: white;
 }
 
-.main-menu__has-children {
+li.menu-item-has-children {
   position: relative;
 }
 
-.main-menu__has-children:hover .main-menu__sub-menu {
+li.menu-item-has-children:hover .sub-menu {
   opacity: 1;
   pointer-events: initial;
 }
 
-.main-menu__sub-menu {
+.sub-menu {
   position: absolute;
   top: 26px;
   left: 0;
@@ -1637,7 +1637,7 @@ li {
 }
 
 @media screen and (max-width: 992px) {
-  .main-menu__sub-menu {
+  .sub-menu {
     position: static;
     width: 100%;
     background: transparent;
@@ -1647,28 +1647,24 @@ li {
   }
 }
 
-.main-menu__sub-menu a {
+.sub-menu a {
   margin-bottom: 4px;
   padding-left: 1px;
   transition: all .4s;
 }
 
 @media screen and (max-width: 992px) {
-  .main-menu__sub-menu a {
+  .sub-menu a {
     font-size: 20px;
   }
 }
 
-.main-menu__sub-menu a:hover {
-  color: var(--text-dark);
-}
-
-.main-menu__has-children .main-menu__link {
+li.menu-item-has-children > a {
   position: relative;
   padding-right: 26px;
 }
 
-.main-menu__has-children .main-menu__link::after {
+li.menu-item-has-children > a::after {
   content: '';
   position: absolute;
   top: 12px;
@@ -1679,7 +1675,7 @@ li {
 }
 
 @media screen and (max-width: 992px) {
-  .main-menu__has-children .main-menu__link::after {
+  li.menu-item-has-children > a::after {
     display: none;
   }
 }
