@@ -12,4 +12,5 @@ get_header();
     <?php echo get_template_part('template-parts/home/rating'); ?>
     <?php echo get_template_part('template-parts/home/tabs'); ?>
 </div>
+<?php echo get_template_part('template-parts/home/freeseo'); ?>
 <?php get_footer(); ?>
