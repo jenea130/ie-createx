@@ -13,4 +13,8 @@ get_header();
     <?php echo get_template_part('template-parts/home/tabs'); ?>
 </div>
 <?php echo get_template_part('template-parts/home/freeseo'); ?>
+<div class="container">
+    <?php echo get_template_part('template-parts/home/ask'); ?>
+</div>
+
 <?php get_footer(); ?>
