@@ -2402,6 +2402,7 @@ li.menu-item-has-children > a::after {
 
 .studies__item {
   position: relative;
+  display: block;
   padding: 4.3rem 4rem 4rem;
   border-radius: 0.4rem;
   border: 1px solid #e5e8ed;

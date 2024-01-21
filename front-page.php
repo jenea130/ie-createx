@@ -16,5 +16,6 @@ get_header();
 <div class="container">
     <?php echo get_template_part('template-parts/home/ask'); ?>
 </div>
+<?php echo get_template_part('template-parts/home/studies'); ?>
 
 <?php get_footer(); ?>
