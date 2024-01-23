@@ -20,6 +20,7 @@ get_header();
 <div class="container">
     <?php echo get_template_part('template-parts/home/benefits'); ?>
     <?php echo get_template_part('template-parts/home/plans'); ?>
+    <?php echo get_template_part('template-parts/home/comment'); ?>
 </div>
 
 <?php get_footer(); ?>
