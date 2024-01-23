@@ -649,8 +649,11 @@ li {
   color: #03cea4;
 }
 
-.card:hover .card__list span {
+.card:hover .card__list li {
   color: white;
+}
+.card:hover .card__list li::before {
+  background: url('../img/icons/list-icon-white.svg') no-repeat center;
 }
 
 .card:hover .card__list li:not(.nonactive) svg {
@@ -700,19 +703,30 @@ li {
   color: var(--accent);
 }
 
-.card__list {
+.card__list ul {
   margin: 0 auto 3.6rem;
   max-width: 200px;
   text-align: center;
 }
 
 .card__list li {
+  position: relative;
   margin-bottom: 15px;
+  padding-left: 3rem;
   display: flex;
   align-items: center;
   font-size: 16px;
   font-weight: 400;
   color: var(--text-dark);
+}
+.card__list li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 16px;
+  background: url('../img/icons/list-icon.svg') no-repeat center;
 }
 
 .card__list svg {

@@ -19,6 +19,7 @@ get_header();
 <?php echo get_template_part('template-parts/home/studies'); ?>
 <div class="container">
     <?php echo get_template_part('template-parts/home/benefits'); ?>
+    <?php echo get_template_part('template-parts/home/plans'); ?>
 </div>
 
 <?php get_footer(); ?>

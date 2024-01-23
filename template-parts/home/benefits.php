@@ -24,7 +24,9 @@ $items2 = $benefits['items2'];
                 </div>
             <?php endforeach; ?>
         </div>
+        
         <div class="benefits__img"><img src="<?php echo $image; ?>" alt=""></div>
+
         <div class="benefits__items-2">
             <?php foreach ($items2 as $item) : ?>
                 <?php
@@ -41,5 +43,6 @@ $items2 = $benefits['items2'];
                 </div>
             <?php endforeach; ?>
         </div>
+        
     </div>
 </section>
