@@ -17,5 +17,8 @@ get_header();
     <?php echo get_template_part('template-parts/home/ask'); ?>
 </div>
 <?php echo get_template_part('template-parts/home/studies'); ?>
+<div class="container">
+    <?php echo get_template_part('template-parts/home/benefits'); ?>
+</div>
 
 <?php get_footer(); ?>
