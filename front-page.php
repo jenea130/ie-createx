@@ -21,6 +21,7 @@ get_header();
     <?php echo get_template_part('template-parts/home/benefits'); ?>
     <?php echo get_template_part('template-parts/home/plans'); ?>
     <?php echo get_template_part('template-parts/home/comment'); ?>
+    <?php echo get_template_part('template-parts/home/news'); ?>
 </div>
 
 <?php get_footer(); ?>
