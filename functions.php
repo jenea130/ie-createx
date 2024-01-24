@@ -50,7 +50,8 @@ function ie_createx_setup() {
 	register_nav_menus(
 		array(
 			'header' => esc_html__( 'Header', 'ie-createx' ),
-			'footer' => esc_html__( 'Footer', 'ie-createx' ),
+			'company' => esc_html__( 'Company', 'ie-createx' ),
+			'services' => esc_html__( 'Services', 'ie-createx' ),
 		)
 	);
 
