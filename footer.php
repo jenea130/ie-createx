@@ -14,6 +14,7 @@
 
 <footer id="colophon" class="footer">
 	<?php echo get_template_part('template-parts/footer/footer-top'); ?>
+	<?php echo get_template_part('template-parts/footer/footer-bottom'); ?>
 </footer><!-- #colophon -->
 </div><!-- #page -->
 
