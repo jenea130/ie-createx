@@ -6,7 +6,7 @@ get_header();
 <div class="container">
     <?php echo get_template_part('template-parts/our-services/advantages'); ?>
 </div>
-<?php echo get_template_part('template-parts/our-services/freeseo'); ?>
+<?php echo get_template_part('template-parts/home/freeseo'); ?>
 <div class="container">
     <?php echo get_template_part('template-parts/our-services/markets'); ?>
 </div>

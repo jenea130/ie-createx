@@ -5,7 +5,7 @@ $items = $markets['items'];
 ?>
 
 <div class="markets">
-    <h2 class="markets__title title"><?php echo $title; ?></h2>
+    <h2 class="markets__title title"><?php echo $title ?></h2>
     <div class="markets__wrap">
         <?php foreach ($items as $item) : ?>
             <?php

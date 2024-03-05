@@ -1,5 +1,5 @@
 <?php 
-$freeseo = get_field('freeseo');
+$freeseo = get_field('freeseo', 2);
 $title = $freeseo['title'];
 $image = $freeseo['image'];
 $form = $freeseo['form'];

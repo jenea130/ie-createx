@@ -7,7 +7,6 @@ $image = $page_intro['image'];
 $button_text = $page_intro['button_text'];
 $phone_label = $page_intro['phone_label'];
 $phone_text = $page_intro['phone_text'];
-$logo = $page_intro['logo'];
 ?>
 
 <div class="page-intro">
@@ -34,7 +33,7 @@ $logo = $page_intro['logo'];
                 <a class="btn btn--border btn--light btn--color-light" href="#"><?php echo $button_text; ?></a>
                 <div class="info">
                     <div class="info__icon">
-                        <img src="<?php echo $logo; ?>" alt="">
+                        <?php echo get_template_part('template-parts/icons/icon-phone'); ?>
                     </div>
                     <div class="info__content">
                         <h4 class="info__label"><?php echo $phone_label; ?></h4>
