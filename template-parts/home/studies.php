@@ -1,5 +1,5 @@
 <?php
-$studies = get_field('studies');
+$studies = get_field('studies', 2);
 $title = $studies['title'];
 $label = $studies['label'];
 $button_text = $studies['button_text'];

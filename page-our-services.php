@@ -10,6 +10,7 @@ get_header();
 <div class="container">
     <?php echo get_template_part('template-parts/our-services/markets'); ?>
 </div>
+<?php echo get_template_part('template-parts/home/studies'); ?>
 
 <section class="studies">
     <div class="container">
