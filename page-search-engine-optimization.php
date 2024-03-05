@@ -5,23 +5,11 @@ get_header();
 <?php echo get_template_part('template-parts/search-engine-optimization/page-intro'); ?>
 
 <div class="container">
-    <section class="logos">
-        <div class="logos__item"><img src="assets/img/logos/client-logo-1.png" alt=""></div>
-        <div class="logos__item"><img src="assets/img/logos/client-logo-2.png" alt=""></div>
-        <div class="logos__item"><img src="assets/img/logos/client-logo-3.png" alt=""></div>
-        <div class="logos__item"><img src="assets/img/logos/client-logo-4.png" alt=""></div>
-        <div class="logos__item"><img src="assets/img/logos/client-logo-5.png" alt=""></div>
-        <div class="logos__item"><img src="assets/img/logos/client-logo-6.png" alt=""></div>
-    </section>
-    <div class="ensure">
-        <div class="ensure__wrap">
-            <div class="ensure__img"> <img src="assets/img/search-engine-optimization/ensure/ensure.jpg" alt=""></div>
-            <div class="ensure__content">
-                <h2 class="ensure__title title">We go above and beyond to ensure successful SEO</h2>
-                <div class="ensure__text text">Lacus ac mollis vitae viverra. Tincidunt est, feugiat montes, viverra ullamcorper mi dui, nulla pharetra. Sapien urna nullam elit diam mauris orci. Volutpat quam tempus justo, aliquam. Tortor ultrices mattis eget orci eu nisi sed augue odio. Et senectus risus, pharetra, tristique libero. Dolor risus ac quam dictum mattis ultrices laoreet sapien. Feugiat lacus, suscipit eu sociis et quis hendrerit. Cras at ac magna ultricies orci.</div>
-            </div>
-        </div>
-    </div>
+    <?php echo get_template_part('template-parts/home/logos'); ?>
+    <?php echo get_template_part('template-parts/search-engine-optimization/ensure'); ?>
+</div>
+
+<div class="container">
     <section class="strategy">
         <h2 class="strategy__title title">SEO services include</h2>
         <div class="strategy__wrap">
