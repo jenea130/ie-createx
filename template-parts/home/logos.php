@@ -1,5 +1,5 @@
 <?php
-$logos = get_field('logos');
+$logos = get_field('logos', 2);
 $gallery = $logos['gallery'];
 ?>
 <section class="logos">
