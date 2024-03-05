@@ -1,5 +1,5 @@
 <?php
-$news = get_field('news');
+$news = get_field('news', 2);
 $title = $news['title'];
 $text = $news['text'];
 $button_text = $news['button_text'];
