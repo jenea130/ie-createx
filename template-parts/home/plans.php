@@ -1,5 +1,5 @@
 <?php
-$plans = get_field('plans');
+$plans = get_field('plans', 2);
 $title = $plans['title'];
 $items = $plans['items'];
 ?>

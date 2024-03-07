@@ -1,5 +1,5 @@
 <?php
-$tabs = get_field('tabs');
+$tabs = get_field('tabs', 2);
 $title = $tabs['title'];
 $items = $tabs['items'];
 ?>
