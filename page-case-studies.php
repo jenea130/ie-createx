@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<?php echo get_template_part('template-parts/our-services/page-intro'); ?>
+<?php echo get_template_part('template-parts/case-studies/page-intro'); ?>
 
 <div class="container">
     <div class="filter">

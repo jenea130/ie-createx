@@ -1,5 +1,15 @@
+<?php 
+$page_intro = get_field('page_intro');
+$label = $page_intro['label'];
+$title = $page_intro['title'];
+$text = $page_intro['text'];
+$image = $page_intro['image'];
+$input_label = $page_intro['input_label'];
+$placeholder = $page_intro['placeholder'];
+$button_text = $page_intro['button_text'];
+?>
 <div class="page-intro">
-    <img class="page-intro__img" src="assets/img/case-studies/case-studies-bg.jpg" alt="">
+    <img class="page-intro__img" src="<?php echo $image; ?>" alt="">
     <div class="page-intro__content">
         <div class="container">
             <div class="page-intro__breadcrumbs">
@@ -11,16 +21,16 @@
                             </svg>
                         </a>
                     </li>
-                    <li><span>Case Studies</span></li>
+                    <li><span><?php echo $label; ?></span></li>
                 </ul>
             </div>
-            <h1 class="page-intro__title">Case Studies</h1>
-            <div class="page-intro__text">We help our clients get better results with our creative and data-driven approach to online advertising. View our case study portfolio and learn more about the process that sets us apart.</div>
+            <h1 class="page-intro__title"><?php echo $title; ?></h1>
+            <div class="page-intro__text"><?php echo $text ?></div>
             <div class="intro-form">
-                <div class="intro-form__label">Email</div>
+                <div class="intro-form__label"><?php echo $input_label; ?></div>
                 <div class="intro-form__wrap">
-                    <input class="intro-form__input" type="text" placeholder="Your working email">
-                    <div class="intro-form__btn">Subscribe</div>
+                    <input class="intro-form__input" type="text" placeholder="<?php echo $placeholder; ?>">
+                    <div class="intro-form__btn"><?php echo $button_text; ?></div>
                 </div>
             </div>
         </div>
