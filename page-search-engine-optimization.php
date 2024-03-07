@@ -35,43 +35,7 @@ get_header();
             </form>
         </div>
     </section>
-    <div class="tree">
-        <h2 class="tree__title title">That’s how it works</h2>
-        <div class="tree__body">
-            <div class="tree__row">
-                <div class="tree__column"></div>
-                <div class="tree__column">
-                    <div class="tree__label">Step 1</div>
-                    <div class="tree__subtitle">Off-Site SEO Analysis </div>
-                    <div class="tree__text text">Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa neque.</div>
-                </div>
-            </div>
-            <div class="tree__row">
-                <div class="tree__column"></div>
-                <div class="tree__column">
-                    <div class="tree__label">Step 2</div>
-                    <div class="tree__subtitle">Technical SEO Optimizations </div>
-                    <div class="tree__text text">Facilisis pellentesque quis accumsan ultricies. Eu egestas eget feugiat lacus, amet, sollicitudin egestas laoreet etiam. Nunc nisl orci auctor et fames. Vestibulum viverra faucibus faucibus et convallis.</div>
-                </div>
-            </div>
-            <div class="tree__row">
-                <div class="tree__column"></div>
-                <div class="tree__column">
-                    <div class="tree__label">Step 3</div>
-                    <div class="tree__subtitle">Usability Check </div>
-                    <div class="tree__text text">Eget amet, enim pharetra leo egestas nisi, odio imperdiet facilisis. Aliquet orci varius volutpat egestas facilisi lobortis. Varius praesent pretium in leo, accumsan, in ultricies. </div>
-                </div>
-            </div>
-            <div class="tree__row">
-                <div class="tree__column"></div>
-                <div class="tree__column">
-                    <div class="tree__label">Step 4</div>
-                    <div class="tree__subtitle">Content Marketing </div>
-                    <div class="tree__text text">Non tempor pulvinar tincidunt aliquam. Placerat ultricies malesuada dui auctor. Faucibus in leo, nulla odio nulla imperdiet quis faucibus neque.</div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php echo get_template_part('template-parts/search-engine-optimization/tree'); ?>
     <section class="plans">
         <h2 class="plans__title title">Flexible pricing plans</h2>
         <header class="plans__header">

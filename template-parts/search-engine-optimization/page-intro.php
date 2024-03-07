@@ -6,7 +6,6 @@ $text = $page_intro['text'];
 $image = $page_intro['image'];
 $input = $page_intro['input'];
 $button_text = $page_intro['button_text'];
-$input = $page_intro['input'];
 ?>
 
 <div class="page-intro">
