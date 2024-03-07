@@ -1,5 +1,5 @@
 <?php
-$comment = get_field('comment');
+$comment = get_field('comment', 2);
 $title = $comment['title'];
 $items = $comment['items'];
 ?>
