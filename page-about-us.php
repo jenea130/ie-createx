@@ -9,17 +9,7 @@
         <?php echo get_template_part('template-parts/home/rating'); ?>
         <?php echo get_template_part('template-parts/about-us/video'); ?>
         <?php echo get_template_part('template-parts/about-us/core'); ?>
-        <div class="seo-agency">
-            <div class="seo-agency__wrap">
-                <div class="seo-agency__column1"><img src="assets/img/about-us/seo-agency/seo-agency-1.jpg" alt=""><img src="assets/img/about-us/seo-agency/seo-agency-2.jpg" alt=""></div>
-                <div class="seo-agency__column2"><img src="assets/img/about-us/seo-agency/seo-agency-3.jpg" alt=""></div>
-                <div class="seo-agency__column3"><img src="assets/img/about-us/seo-agency/seo-agency-4.jpg" alt=""></div>
-            </div>
-            <div class="seo-agency__footer">
-                <h3 class="seo-agency__subtitle subtitle">More than SEO agency</h3>
-                <div class="seo-agency__text text">Eleifend orci massa et facilisis orci feugiat ac. Congue in ut lacus, turpis accumsan gravida. Aliquet mattis dignissim massa sociis a, id bibendum. Egestas lorem eros, mi cras amet, vel eget molestie. Turpis enim arcu, amet donec massa pellentesque nulla duis. Arcu dictum metus sed purus senectus faucibus eget elementum pretium.</div>
-            </div>
-        </div>
+        <?php echo get_template_part('template-parts/about-us/seo-agency'); ?>
         <div class="awards">
             <div class="awards__wrap">
                 <div class="awards__img">
