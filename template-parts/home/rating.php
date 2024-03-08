@@ -1,5 +1,5 @@
 <?php
-$rating = get_field('rating');
+$rating = get_field('rating', 2);
 $items = $rating['items'];
 ?>
 <section class="rating">

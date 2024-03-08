@@ -6,34 +6,7 @@
     <?php echo get_template_part('template-parts/about-us/page-intro'); ?>
 
     <div class="container">
-        <section class="rating">
-            <div class="rating__wrap">
-                <div class="rating__item">
-                    <div class="rating__header"><img src="assets/img/rating/rating-1.svg" alt="">
-                        <div class="rating__number">10</div>
-                    </div>
-                    <div class="rating__title">Years of experience</div>
-                </div>
-                <div class="rating__item">
-                    <div class="rating__header"><img src="assets/img/rating/rating-2.svg" alt="">
-                        <div class="rating__number">45</div>
-                    </div>
-                    <div class="rating__title">Awards</div>
-                </div>
-                <div class="rating__item">
-                    <div class="rating__header"><img src="assets/img/rating/rating-3.svg" alt="">
-                        <div class="rating__number">540+</div>
-                    </div>
-                    <div class="rating__title">Projects</div>
-                </div>
-                <div class="rating__item">
-                    <div class="rating__header"><img src="assets/img/rating/rating-4.svg" alt="">
-                        <div class="rating__number">100%</div>
-                    </div>
-                    <div class="rating__title">Happy clients</div>
-                </div>
-            </div>
-        </section>
+        <?php echo get_template_part('template-parts/home/rating'); ?>
         <div class="video">
             <iframe class="video__iframe" width="100%" height="100%" src="https://www.youtube.com/embed/kFpmlbNs6jk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><img class="video__img" src="assets/img/video/video.jpg" alt="">
             <div class="video__play">
