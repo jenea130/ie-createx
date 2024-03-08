@@ -1253,6 +1253,7 @@ outline: none;
 
 .intro-list li {
   flex: 1;
+  text-align: left;
 }
 
 .intro-list li:not(:first-of-type) ::before {
