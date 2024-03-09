@@ -11,47 +11,8 @@
         <?php echo get_template_part('template-parts/about-us/core'); ?>
         <?php echo get_template_part('template-parts/about-us/seo-agency'); ?>
         <?php echo get_template_part('template-parts/about-us/awards'); ?>
-        <section class="get-free">
-            <h2 class="get-free__title">Get a Free SEO Analysis!</h2>
-            <div class="get-free__form">
-                <form class="seo-form" action="">
-                    <div class="seo-form__wrap">
-                        <div class="seo-form__group">
-                            <div class="seo-form__label">Name</div>
-                            <input type="text" placeholder="Your name">
-                        </div>
-                        <div class="seo-form__group">
-                            <div class="seo-form__label">Email</div>
-                            <input type="email" placeholder="Your working email">
-                        </div>
-                        <div class="seo-form__group">
-                            <div class="seo-form__label">Your website URL</div>
-                            <input type="text" placeholder="http://yoursite.com">
-                        </div>
-                        <div class="seo-form__group">
-                            <btn class="seo-form__btn btn">Analyse your site</btn>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-        <div class="clients">
-            <h2 class="clients__title title">240+ satisfied clients</h2>
-            <div class="clients__wrap">
-                <div class="clients__item"><img src="assets/img/logos/client-logo-1.png" alt=""></div>
-                <div class="clients__item"><img src="assets/img/logos/client-logo-2.png" alt=""></div>
-                <div class="clients__item"><img src="assets/img/logos/client-logo-3.png" alt=""></div>
-                <div class="clients__item"><img src="assets/img/logos/client-logo-4.png" alt=""></div>
-                <div class="clients__item"><img src="assets/img/logos/client-logo-5.png" alt=""></div>
-                <div class="clients__item"><img src="assets/img/logos/client-logo-6.png" alt=""></div>
-                <div class="clients__item"><img src="assets/img/logos/client-logo-7.png" alt=""></div>
-                <div class="clients__item"><img src="assets/img/logos/client-logo-8.png" alt=""></div>
-                <div class="clients__item"><img src="assets/img/logos/client-logo-9.png" alt=""></div>
-                <div class="clients__item"><img src="assets/img/logos/client-logo-10.png" alt=""></div>
-                <div class="clients__item"><img src="assets/img/logos/client-logo-11.png" alt=""></div>
-                <div class="clients__item"><img src="assets/img/logos/client-logo-12.png" alt=""></div>
-            </div>
-        </div>
+        <?php echo get_template_part('template-parts/search-engine-optimization/get-free'); ?>
+        <?php echo get_template_part('template-parts/about-us/clients'); ?>
         <div class="team">
             <h2 class="team__title title">Meet our team</h2>
             <div class="team__wrap">
