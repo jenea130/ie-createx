@@ -10,7 +10,7 @@ $case_posts = new WP_Query([
     'posts_per_page' => -1
 ]);
 ?>
-<div class="filter">
+<div class="filter"id="stop">
     <div class="filter__header">
         <button class="filter__btn active" data-target="">All case studies</button>
         <?php foreach ($terms as $term) : ?>
@@ -34,12 +34,6 @@ $case_posts = new WP_Query([
                 $logo = get_field('logo');
                 $cur_terms = get_the_terms(get_the_ID(), 'category-case-studies');
                 $term_slug = $cur_terms[0]->slug;
-                
-                // $;erm_str = '';
-                // foreach($cur_terms as $item) {
-                //     $term_str .= $item->slug . ' ';
-                // }
-                // vardump($term_str);
                 ?>
                 <div class="filter__item" data-filter="<?php echo $term_slug; ?>">
                     <div class="item-filter">
