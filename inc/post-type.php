@@ -7,18 +7,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_action( 'init', 'my_custom_init' );
 function my_custom_init() {
 
+	$label = 'Case Studio';
+
 	register_post_type( 'case-studio', array(
 		'labels'             => array(
-			'name'              => 'Case studio', // Основное название типа записи
-			'singular_name'     => 'Case studio', // отдельное название записи типа Book
-			'add_new'           => __( 'Case studio' ),
-			'add_new_item'      => __( 'Case studio' ),
-			'edit_item'         => __( 'Case studio' ),
-			'new_item'          => __( 'Case studio' ),
-			'view_item'         => __( 'Vedi' ),
-			'search_items'      => __( 'Cerca' ),
+			'name'              => $label, // Основное название типа записи
+			'singular_name'     => $label, // отдельное название записи типа Book
+			'add_new'           => __( 'Add New' ),
+			'add_new_item'      => __( 'Add New' ),
+			'edit_item'         => __( 'Edit' ),
+			'new_item'          => __( 'New' ),
+			'view_item'         => __( 'View' ),
+			'search_items'      => __( 'Search' ),
 			'parent_item_colon' => '',
-			'menu_name'         => 'Case studio'
+			'menu_name'         => $label
 		),
 		'public'             => true,
 		'publicly_queryable' => true,
