@@ -4,7 +4,6 @@ $terms = get_terms([
     'hide_empty' => true,
     'orderby' => 'id'
 ]);
-// vardump($terms);
 $case_posts = new WP_Query([
     'post_type' => 'case-studio',
     'posts_per_page' => -1
