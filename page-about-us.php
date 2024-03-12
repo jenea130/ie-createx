@@ -14,7 +14,7 @@
         <?php echo get_template_part('template-parts/search-engine-optimization/get-free'); ?>
         <?php echo get_template_part('template-parts/about-us/clients'); ?>
         <?php echo get_template_part('template-parts/about-us/team'); ?>
-        <?php echo get_template_part('template-parts/about-us/aks'); ?>
+        <?php echo get_template_part('template-parts/home/ask'); ?>
         <?php echo get_template_part('template-parts/about-us/career'); ?>
         <?php echo get_template_part('template-parts/home/news'); ?>
     </div>
