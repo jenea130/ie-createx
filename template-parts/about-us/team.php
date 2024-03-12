@@ -23,7 +23,7 @@ $socials = $team['socials'];
                             $url = $item['url'];
                             ?>
                         <li>
-                            <a href="<?php echo $url; ?>">
+                            <a href="<?php echo $url; ?>" target="_blank">
                             <?php echo $icon; ?>
                             </a>
                         </li>
