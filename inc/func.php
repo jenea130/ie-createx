@@ -34,7 +34,7 @@ function get_short_text($content, $count)
 
 function clear_phone($phone)
 {
-    return '+' . preg_replace("/[^0-9]/", "", $phone);
+	return '+' . preg_replace("/[^0-9]/", "", $phone);
 }
 function vardump($var)
 {

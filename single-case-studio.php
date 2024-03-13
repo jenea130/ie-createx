@@ -28,42 +28,7 @@ get_header();
   <div class="single-case-studies">
     <div class="single-case-studies__main">
       <div class="case-rangers">
-        <div class="ranges">
-          <div class="ranges__wrap">
-            <div class="ranges__block">
-              <div class="ranges__range">
-                <svg class="ranges__circle" viewBox="0 0 36 36">
-                  <path class="ranges__circle-bg" stroke="#F52F6E" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-                  <path class="ranges__circle-base" stroke-dasharray="75 100" stroke="#F52F6E" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-                </svg>
-              </div>
-              <div class="ranges__wrapper">
-                <div class="ranges__number">70%</div>
-                <div class="ranges__description">Open Rate</div>
-              </div>
-            </div>
-            <div class="ranges__block">
-              <div class="ranges__range">
-                <svg class="ranges__circle" viewBox="0 0 36 36">
-                  <path class="ranges__circle-bg" stroke="#F89828" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-                  <path class="ranges__circle-base" stroke-dasharray="100 100" stroke="#F89828" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-                </svg>
-              </div>
-              <div class="ranges__wrapper">
-                <div class="ranges__number">200%</div>
-                <div class="ranges__description">Growth in sales</div>
-              </div>
-            </div>
-            <div class="ranges__block">
-              <div class="ranges__range">
-              </div>
-              <div class="ranges__wrapper">
-                <div class="ranges__number">8,000</div>
-                <div class="ranges__description">DAU</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <?php echo get_template_part('template-parts/single-case-studio/rangers'); ?>
       </div>
       <div class="case-description">
         <?php if (have_posts()) : ?>
@@ -157,40 +122,7 @@ get_header();
       </div>
     </div>
     <div class="single-case-studies__sidebar">
-      <div class="case-aside">
-        <h3 class="case-aside__title">About the client</h3>
-        <div class="case-aside__text">At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare pharetra, neque, fermentum.</div>
-        <h3 class="case-aside__title">Industry</h3>
-        <div class="case-aside__text">Electric company - B2B</div>
-        <h3 class="case-aside__title">Services rendered</h3>
-        <ul class="list">
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z" fill="#7772F1"></path>
-            </svg><span>Remarketing</span>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z" fill="#7772F1"></path>
-            </svg><span>Conversion Rate Optimization</span>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z" fill="#7772F1"></path>
-            </svg><span>User Testing</span>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z" fill="#7772F1"></path>
-            </svg><span>PPC Management</span>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z" fill="#7772F1"></path>
-            </svg><span>Usability Testing</span>
-          </li>
-        </ul>
-      </div>
+    <?php echo get_template_part('template-parts/case-studies/case-aside'); ?> 
       <ul class="category-list">
         <li>#SEO</li>
         <li>#research</li>
