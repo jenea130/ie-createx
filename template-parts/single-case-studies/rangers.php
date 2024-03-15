@@ -5,11 +5,11 @@ $items = $rangers['items'];
 <div class="ranges">
   <div class="ranges__wrap">
     <?php foreach ($items as $item) : ?>
-      <?php 
-       $color = $item['color'];
-       $length = $item['lenght'];
-       $text = $item['text'];
-        ?>
+      <?php
+      $color = $item['color'];
+      $length = $item['lenght'];
+      $text = $item['text'];
+      ?>
       <div class="ranges__block">
         <div class="ranges__range">
           <svg class="ranges__circle" viewBox="0 0 36 36">

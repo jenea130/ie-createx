@@ -1,4 +1,4 @@
-<?php 
+<?php
 $page_intro = get_field('page_intro');
 $label = $page_intro['label'];
 $image = $page_intro['image'];
@@ -20,7 +20,7 @@ $icon = $page_intro['icon'];
           </li>
           <li>
             <a href="<?php echo get_the_permalink(23); ?>"><?php echo get_the_title(23); ?></a>
-        </li>
+          </li>
           <li><span><?php echo get_the_title(); ?></span></li>
         </ul>
       </div>
