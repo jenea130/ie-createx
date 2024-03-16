@@ -1348,15 +1348,22 @@ outline: none;
 }
 
 .list li {
-  display: flex;
-  align-items: center;
+  position: relative;
   margin-bottom: 7px;
+  padding-left: 3rem;
   color: var(--text-light);
 }
 
-.list svg {
-  margin-right: 16px;
+.list li::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: url('../img/icons/icon-list.svg') no-repeat center;
 }
+
 .case-aside li {
   display: flex;
   align-items: center;
