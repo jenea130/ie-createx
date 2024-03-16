@@ -1146,16 +1146,16 @@ li {
 .seo-form input[type="text"],
 .seo-form input[type="email"],
 .seo-form input[type="tel"] {
-width: 100%;
-height: 4.4rem;
-font-size: 1.4rem;
-font-weight: 400;
-text-indent: 1.5rem;
-color: var(--text-dark);
-border-radius: 0.40rem;
-border: 1px solid #d7dadd;
-background: #f4f5f6;
-outline: none;
+  width: 100%;
+  height: 4.4rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-indent: 1.5rem;
+  color: var(--text-dark);
+  border-radius: 0.40rem;
+  border: 1px solid #d7dadd;
+  background: #f4f5f6;
+  outline: none;
 }
 
 .seo-form input::-moz-placeholder {
@@ -1345,6 +1345,10 @@ outline: none;
 .jq-selectbox__dropdown li.selected {
   font-weight: 700;
   color: var(--accent);
+}
+
+.list {
+  margin-bottom: 24px;
 }
 
 .list li {
@@ -5016,6 +5020,31 @@ li.menu-item-has-children>a::after {
 
 .sandwitch__line--bottom {
   top: 12px;
+}
+
+.case-content {
+  padding-bottom: 8rem;
+}
+
+.case-content p {
+  margin-bottom: 24px;
+  font-size: 1.6rem;
+  line-height: 1.66;
+  /* color: var(--text-light); */
+}
+
+.case-content p strong {
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--gray-900, #1E212C);
+}
+
+.case-content h2 {
+  margin-bottom: 24px;
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 1.3;
+  color: var(--text-dark);
 }
 
 /*# sourceMappingURL=my.css.map */

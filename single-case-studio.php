@@ -1,5 +1,8 @@
 <?php
 get_header();
+
+$case_content = get_field('case_content');
+$text = $case_content['text'];
 ?>
 
 <?php echo get_template_part('template-parts/single-case-studies/page-intro'); ?>
@@ -10,96 +13,12 @@ get_header();
       <div class="case-rangers">
         <?php echo get_template_part('template-parts/single-case-studies/rangers'); ?>
       </div>
-      <div class="case-description">
+      <div class="case-content">
         <?php if (have_posts()) : ?>
           <?php the_post(); ?>
           <?php the_content(); ?>
           <?php wp_reset_postdata(); ?>
         <?php endif; ?>
-      </div>
-      <div class="case-info">
-        <h3 class="case-info__subtitle subtitle">Strategies</h3>
-        <div class="case-info__list">
-          <ul class="list">
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z" fill="#7772F1"></path>
-              </svg><span>Gravida elit et libero, varius congue risus quisque enim.</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z" fill="#7772F1"></path>
-              </svg><span>Sit quis vitae, gravida aliquam condimentum.</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z" fill="#7772F1"></path>
-              </svg><span>Praesent et facilisis nam mus senectus massa dignissim.</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z" fill="#7772F1"></path>
-              </svg><span>Fermentum diam elementum viverra proin.</span>
-            </li>
-          </ul>
-        </div>
-        <p class="text">Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae. </p>
-        <img src="assets/img/single-case-studies/case-info/case-info.jpg" alt="">
-        <h3 class="case-info__subtitle subtitle">Resieved goals</h3>
-        <div class="case-info__list">
-          <ul class="list">
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z" fill="#7772F1"></path>
-              </svg><span>Bibendum malesuada mauris, id nisl enim diam.</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z" fill="#7772F1"></path>
-              </svg><span>Nam id in non sed cras purus nunc et.</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z" fill="#7772F1"></path>
-              </svg><span>Neque tortor, pellentesque amet est, eu accumsan condimentum nulla.</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z" fill="#7772F1"></path>
-              </svg><span>Mauris orci, cursus nisl odio est adipiscing gravida magna eget.</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z" fill="#7772F1"></path>
-              </svg><span>Sit turpis sit ultrices viverra adipiscing malesuada.</span>
-            </li>
-          </ul>
-        </div>
-        <h3 class="case-info__subtitle subtitle">Results</h3>
-        <div class="case-info__list">
-          <ul class="list">
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z" fill="#7772F1"></path>
-              </svg><span>Mauris dignissim blandit cursus imperdiet accumsan lorem vel, tortor.</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z" fill="#7772F1"></path>
-              </svg><span>Quis mauris vel felis convallis nulla dignissim.</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z" fill="#7772F1"></path>
-              </svg><span>Cursus sit platea ac posuere non interdum in.</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z" fill="#7772F1"></path>
-              </svg><span>Mattis pellentesque vel, venenatis, urna, quis ut.</span>
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
     <div class="single-case-studies__sidebar">
