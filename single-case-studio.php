@@ -43,7 +43,8 @@ get_header();
             </li>
           </ul>
         </div>
-        <p class="text">Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae. </p><img src="assets/img/single-case-studies/case-info/case-info.jpg" alt="">
+        <p class="text">Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae. </p>
+        <img src="assets/img/single-case-studies/case-info/case-info.jpg" alt="">
         <h3 class="case-info__subtitle subtitle">Resieved goals</h3>
         <div class="case-info__list">
           <ul class="list">

@@ -9,7 +9,7 @@ $case_posts = new WP_Query([
     'posts_per_page' => -1
 ]);
 ?>
-<div class="filter"id="stop">
+<div class="filter" id="stop">
     <div class="filter__header">
         <button class="filter__btn active" data-target="">All case studies</button>
         <?php foreach ($terms as $term) : ?>
@@ -45,22 +45,7 @@ $case_posts = new WP_Query([
                         </div>
                         <div class="item-filter__content">
                             <div class="ranges">
-                                <div class="ranges__wrap">
-                                    <?php foreach ($items as $item) : ?>
-                                        <?php
-                                        $image = $item['image'];
-                                        $title = $item['title'];
-                                        $subtitle = $item['subtitle'];
-                                        ?>
-                                        <div class="ranges__block">
-                                            <div class="ranges__range"><img src="<?php echo $image; ?>" alt=""></div>
-                                            <div class="ranges__wrapper">
-                                                <div class="ranges__number"><?php echo $title; ?></div>
-                                                <div class="ranges__description"><?php echo $subtitle; ?></div>
-                                            </div>
-                                        </div>
-                                    <?php endforeach; ?>
-                                </div>
+                                <?php echo get_template_part('template-parts/single-case-studies/rangers'); ?>
                             </div>
                             <div class="item-filter__text text"><?php echo $excerpt; ?></div>
                             <a class="link" href="<?php echo $permalink; ?>">

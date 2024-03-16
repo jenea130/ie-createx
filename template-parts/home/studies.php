@@ -45,22 +45,7 @@ $background = $studies['background'];
                                 <?php echo $excerpt; ?>
                             </div>
                             <div class="ranges">
-                                <div class="ranges__wrap">
-                                    <?php foreach ($items as $item) : ?>
-                                        <?php
-                                        $image = $item['image'];
-                                        $title = $item['title'];
-                                        $subtitle = $item['subtitle'];
-                                        ?>
-                                        <div class="ranges__block">
-                                            <div class="ranges__range"><img src="<?php echo $image; ?>" alt=""></div>
-                                            <div class="ranges__wrapper">
-                                                <div class="ranges__number"><?php echo $title; ?></div>
-                                                <div class="ranges__description"><?php echo $subtitle; ?></div>
-                                            </div>
-                                        </div>
-                                    <?php endforeach; ?>
-                                </div>
+                                <?php echo get_template_part('template-parts/single-case-studies/rangers'); ?>
                             </div>
                         </div>
                     </a>
