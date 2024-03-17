@@ -13,7 +13,7 @@ $image = $createx['image'];
             <div class="createx__text">
             <?php echo $text; ?>
             </div>
-            <a class="btn btn--small" href="about-us.html"><?php echo $button_text; ?></a>
+            <a class="btn btn--small" href="<?php echo get_the_permalink(25); ?>"><?php echo $button_text; ?></a>
         </div>
     </div>
 </section>

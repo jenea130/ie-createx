@@ -3740,6 +3740,7 @@ li.menu-item-has-children>a::after {
 .single-case-studies {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 10rem;
 }
 
 .single-case-studies__main {
@@ -5020,10 +5021,6 @@ li.menu-item-has-children>a::after {
 
 .sandwitch__line--bottom {
   top: 12px;
-}
-
-.case-content {
-  padding-bottom: 8rem;
 }
 
 .case-content p {
