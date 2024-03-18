@@ -11,7 +11,7 @@ $items = $home_intro['items'];
     <div class="container">
         <h1 class="home-intro__title"><?php echo $title; ?></h1>
         <div class="home-intro__actions">
-            <a class="btn btn--light" href="search-engine-optimization.html">
+            <a class="btn btn--light" href="<?php echo get_the_permalink(33); ?>">
                 <?php echo $button_text; ?>
             </a>
             <div class="home-intro__play">
