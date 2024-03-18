@@ -140,11 +140,13 @@ add_action( 'widgets_init', 'ie_createx_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ie_createx_scripts() {
+	wp_enqueue_style( 'ie-createx-form-styler-css', get_template_directory_uri() . '/assets/libs/jQueryFormStyler-master/dist/jquery.formstyler.css', array(), _S_VERSION );
 	wp_enqueue_style( 'ie-createx-my-css', get_template_directory_uri() . '/assets/css/my.css', array(), _S_VERSION );
 	wp_enqueue_style( 'ie-createx-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'ie-createx-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'ie-createx-jquery', get_template_directory_uri() . '/assets/libs/code.jquery.com_jquery-3.7.0.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'ie-createx-form-styler', get_template_directory_uri() . '/assets/libs/jQueryFormStyler-master/dist/jquery.formstyler.min.js', array('jquery'), _S_VERSION, true );
 	wp_enqueue_script( 'ie-createx-slick', get_template_directory_uri() . '/assets/libs/slick/slick/slick.min.js', array('jquery'), _S_VERSION, true );
 	wp_enqueue_script( 'ie-createx-custom-jquery', get_template_directory_uri() . '/assets/jquery/custom-jquery.js', array('jquery'), _S_VERSION, true );
 	wp_enqueue_script( 'ie-createx-custom-webpack', get_template_directory_uri() . '/assets/js/dist/webpack.js', array('jquery'), _S_VERSION, true );
