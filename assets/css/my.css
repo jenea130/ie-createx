@@ -1495,7 +1495,7 @@ li {
   display: none;
 }
 
-.post__list li img {
+.post__list li svg {
   margin-right: 12px;
 }
 
