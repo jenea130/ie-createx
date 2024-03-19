@@ -1,24 +1,25 @@
 <?php
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit;
 }
 
-add_action( 'init', 'my_custom_init' );
-function my_custom_init() {
+add_action('init', 'my_custom_init');
+function my_custom_init()
+{
 
 	$label = 'Case Studio';
 
-	register_post_type( 'case-studio', array(
+	register_post_type('case-studio', array(
 		'labels'             => array(
 			'name'              => $label, // Основное название типа записи
 			'singular_name'     => $label, // отдельное название записи типа Book
-			'add_new'           => __( 'Add New' ),
-			'add_new_item'      => __( 'Add New' ),
-			'edit_item'         => __( 'Edit' ),
-			'new_item'          => __( 'New' ),
-			'view_item'         => __( 'View' ),
-			'search_items'      => __( 'Search' ),
+			'add_new'           => __('Add New'),
+			'add_new_item'      => __('Add New'),
+			'edit_item'         => __('Edit'),
+			'new_item'          => __('New'),
+			'view_item'         => __('View'),
+			'search_items'      => __('Search'),
 			'parent_item_colon' => '',
 			'menu_name'         => $label
 		),
@@ -33,7 +34,6 @@ function my_custom_init() {
 		'hierarchical'       => false,
 		'menu_position'      => 20,
 		'menu_icon'          => get_template_directory_uri() . '/assets/img/icons/post.png',
-		'supports'           => array( 'title', 'thumbnail', 'excerpt', 'editor' )
-	) );
-
+		'supports'           => array('title', 'thumbnail', 'excerpt', 'editor')
+	));
 }
