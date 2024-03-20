@@ -1,8 +1,8 @@
-<div class="page-about-us">
-    <?php
-    get_header();
-    ?>
+<?php
+get_header();
+?>
 
+<div class="page-about-us">
     <?php echo get_template_part('template-parts/about-us/page-intro'); ?>
 
     <div class="container">

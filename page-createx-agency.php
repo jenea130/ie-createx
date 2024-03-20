@@ -1,8 +1,8 @@
-<div class="page-careers-at-createx-agency">
-    <?php
-    get_header();
-    ?>
+<?php
+get_header();
+?>
 
+<div class="page-careers-at-createx-agency">
     <?php echo get_template_part('template-parts/createx-agency/page-intro'); ?>
     <div class="container">
         <?php echo get_template_part('template-parts/createx-agency/ask-careers'); ?>

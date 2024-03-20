@@ -1,8 +1,8 @@
-<div class="page-intro-search-engine-optimization">
-    <?php
-    get_header();
-    ?>
+<?php
+get_header();
+?>
 
+<div class="page-intro-search-engine-optimization">
     <?php echo get_template_part('template-parts/search-engine-optimization/page-intro'); ?>
 
     <div class="container">
