@@ -2,6 +2,7 @@
 get_header();
 
 ?>
+
 <div class="page-blog">
     <?php echo get_template_part('template-parts/blog/page-intro'); ?>
 

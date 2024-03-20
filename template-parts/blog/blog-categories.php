@@ -9,16 +9,17 @@ endforeach;
   <h2 class="blog-categories__title title title--small">Blog Categories</h2>
   <ul class="blog-categories__list">
     <li>
-      <span class="blog-categories__subtitle">All</span>
+      <a href="<?php echo get_the_permalink(27); ?>" class="blog-categories__subtitle">All</a>
       <span class="blog-categories__count"><?php echo $all; ?></span>
     </li>
     <?php foreach ($categories as $category) : ?>
       <?php
       $name = $category->name;
       $count = $category->count;
+      $category_id = $category->term_id;
       ?>
       <li>
-        <span class="blog-categories__subtitle"><?php echo $name; ?></span>
+        <a href="<?php echo get_the_permalink(27); ?>?category_id=<?php echo $category_id; ?>" class="blog-categories__subtitle"><?php echo $name; ?></a>
         <span class="blog-categories__count"><?php echo $count; ?></span>
       </li>
     <?php endforeach; ?>
