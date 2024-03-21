@@ -1,13 +1,20 @@
 <?php
-$page_blog = new WP_Query([
-  'post_type' => 'post',
-  'posts_per_page' => 6,
-  'offset' => 2,
-  // 'meta_query' => [[
-  //   'key' => 'for_loop_featured',
-  //   'value' => true,
-  // ]],
-]);
+$category_id = isset($_GET['category_id']) ? $_GET['category_id'] : '';
+
+if ($category_id !== '') {
+  $page_blog = new WP_Query([
+    'post_type' => 'post',
+    'posts_per_page' => 6,
+    'offset' => 2,
+    'cat' => [(int)$category_id],
+  ]);
+} else {
+  $page_blog = new WP_Query([
+    'post_type' => 'post',
+    'posts_per_page' => 6,
+    'offset' => 2,
+  ]);
+}
 ?>
 <div class="page-blog__main">
   <div class="main-blog">
@@ -24,8 +31,6 @@ $page_blog = new WP_Query([
           $category = get_the_category()[0]->name;
           $date = get_the_date('F j, Y', get_the_ID());
           $author = get_the_author();
-          // $for_loop = get_field('for_loop');
-          // $featured = $for_loop['featured'];
           ?>
           <div class="main-blog__item">
             <div class="post">

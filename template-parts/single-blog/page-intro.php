@@ -5,7 +5,7 @@ $title = $page_intro['title'];
 $image = $page_intro['image'];
 ?>
 <div class="page-intro">
-  <img class="page-intro__img" src="<?php echo $title; ?>" alt="">
+  <img class="page-intro__img" src="<?php echo $image; ?>" alt="">
   <div class="page-intro__content">
     <div class="container">
       <div class="page-intro__breadcrumbs">

@@ -1,5 +1,6 @@
 <?php
 $category_id = isset($_GET['category_id']) ? $_GET['category_id'] : '';
+
 if ($category_id !== '') {
   $latest_blog = new WP_Query([
     'post_type' => 'post',
@@ -7,6 +8,22 @@ if ($category_id !== '') {
     'cat' => [(int)$category_id],
   ]);
 } else {
+  $latest_blog = new WP_Query([
+    'post_type' => 'post',
+    'posts_per_page' => 2
+  ]);
+}
+
+$tag_id = isset($_GET['tag_id']) ? $_GET['tag_id'] : '';
+
+if ($tag_id !== '') {
+  echo "Hello";
+  $latest_blog = new WP_Query([
+    'post_type' => 'post',
+    'posts_per_page' => 2,
+  ]);
+} else {
+  echo "Failed";
   $latest_blog = new WP_Query([
     'post_type' => 'post',
     'posts_per_page' => 2

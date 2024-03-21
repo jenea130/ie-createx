@@ -2,7 +2,7 @@
 $categories = get_categories();
 $all = 0;
 foreach ($categories as $category) :
-  $all = $all + $category->count;
+  $all += $category->count;
 endforeach;
 ?>
 <div class="blog-categories">

@@ -1,4 +1,4 @@
-<?php 
+<?php
 $terms = get_tags();
 ?>
 <div class="page-blog__aside">
@@ -11,8 +11,13 @@ $terms = get_tags();
         <?php
         $name = $term->name;
         $slug = $term->slug;
+        $tag_id = $term->term_id;
         ?>
-        <li><?php echo "#" . $name; ?></li>
+        <li>
+          <a href="<?php echo get_the_permalink(27); ?>?tag_id=<?php echo $tag_id; ?>">
+            <?php echo "#" . $name; ?>
+          </a>
+        </li>
       <?php endforeach; ?>
     </ul>
   </div>
