@@ -20,7 +20,7 @@ $items = $page_intro['items'];
             </a>
           </li>
           <li>
-            <a href="<?php echo get_the_permalink(23); ?>">About us</a>
+            <a href="<?php echo get_the_permalink(25); ?>"><?php echo get_the_title(25); ?></a>
           </li>
           <li>
             <span><?php echo $label; ?></span>

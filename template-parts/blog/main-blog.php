@@ -15,6 +15,23 @@ if ($category_id !== '') {
     'offset' => 2,
   ]);
 }
+
+$tag_id = isset($_GET['tag_id']) ? $_GET['tag_id'] : '';
+
+if ($tag_id !== '') {
+  $page_blog = new WP_Query([
+    'post_type' => 'post',
+    'posts_per_page' => 6,
+    'offset' => 2,
+    'tag_id' => "$tag_id",
+  ]);
+} else {
+  $page_blog = new WP_Query([
+    'post_type' => 'post',
+    'posts_per_page' => 6,
+    'offset' => 2,
+  ]);
+}
 ?>
 <div class="page-blog__main">
   <div class="main-blog">
