@@ -17,16 +17,15 @@ if ($category_id !== '') {
 $tag_id = isset($_GET['tag_id']) ? $_GET['tag_id'] : '';
 
 if ($tag_id !== '') {
-  echo "Hello";
   $latest_blog = new WP_Query([
     'post_type' => 'post',
     'posts_per_page' => 2,
+    'tag_id' => "$tag_id",
   ]);
 } else {
-  echo "Failed";
   $latest_blog = new WP_Query([
     'post_type' => 'post',
-    'posts_per_page' => 2
+    'posts_per_page' => 2,
   ]);
 }
 ?>
@@ -42,7 +41,9 @@ if ($tag_id !== '') {
         $category = get_the_category()[0]->name;
         $date = get_the_date('F j, Y', get_the_ID());
         $author = get_the_author();
+        $tag = get_the_tags(get_the_ID());
         ?>
+
         <div class="latest-blog__item">
           <div class="post">
             <div class="post__img">

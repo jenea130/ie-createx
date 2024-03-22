@@ -3930,12 +3930,15 @@ li.menu-item-has-children>a::after {
 .case-share li {
   margin-right: 12px;
 }
+
 .case-share svg {
   fill: #787A80;
   transition: fill .3s ease;
 }
+
 .case-share svg:hover {
-  fill: var(--accent);
+  /* fill: #1e212c; */
+  fill: #403af1;
 }
 
 .page-about-us .page-intro {

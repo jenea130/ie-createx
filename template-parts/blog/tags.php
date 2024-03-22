@@ -1,5 +1,10 @@
 <?php
-$terms = get_tags();
+
+if (is_single()) :
+  $terms = get_the_tags(get_the_ID());
+else :
+  $terms = get_tags();
+endif;
 ?>
 <div class="tags">
   <h2 class="tags__title title title--small">Tags</h2>

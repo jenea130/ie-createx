@@ -1,5 +1,7 @@
 <?php
 get_header();
+
+$tags = get_the_tags(get_the_ID());
 ?>
 <div class="single-blog">
 	<?php echo get_template_part('template-parts/single-blog/page-intro') ?>
@@ -16,11 +18,16 @@ get_header();
 				</div>
 				<div class="tags-share">
 					<div class="tags-share__item">
-						<div class="tags-share__wrap"><span>Tags:</span>
+						<div class="tags-share__wrap">
+							<span>Tags:</span>
 							<ul class="category-list">
-								<li>#business</li>
-								<li>#PPC</li>
-								<li>#targeting</li>
+								<?php foreach ($tags as $tag) : ?>
+									<?php
+									$name = $tag->name;
+									$slug = $tag->slug;
+									?>
+									<li><?php echo $name; ?></li>
+								<?php endforeach; ?>
 							</ul>
 						</div>
 					</div>
@@ -33,12 +40,14 @@ get_header();
 						<div class="post-nav__link">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M9.20711 17.2071C8.81658 17.5976 8.18342 17.5976 7.79289 17.2071L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929L7.79289 6.79289C8.18342 6.40237 8.81658 6.40237 9.20711 6.79289C9.59763 7.18342 9.59763 7.81658 9.20711 8.20711L6.41421 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L6.41421 13L9.20711 15.7929C9.59763 16.1834 9.59763 16.8166 9.20711 17.2071Z" fill="#424551"></path>
-							</svg><span>Prev Post</span>
+							</svg>
+							<span>Prev Post</span>
 						</div>
 						<div class="post-nav__link">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M9.20711 17.2071C8.81658 17.5976 8.18342 17.5976 7.79289 17.2071L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929L7.79289 6.79289C8.18342 6.40237 8.81658 6.40237 9.20711 6.79289C9.59763 7.18342 9.59763 7.81658 9.20711 8.20711L6.41421 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L6.41421 13L9.20711 15.7929C9.59763 16.1834 9.59763 16.8166 9.20711 17.2071Z" fill="#424551"></path>
-							</svg><span>Next Post</span>
+							</svg>
+							<span>Next Post</span>
 						</div>
 					</header>
 					<div class="post-nav__wrap">
