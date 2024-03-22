@@ -3930,6 +3930,13 @@ li.menu-item-has-children>a::after {
 .case-share li {
   margin-right: 12px;
 }
+.case-share svg {
+  fill: #787A80;
+  transition: fill .3s ease;
+}
+.case-share svg:hover {
+  fill: var(--accent);
+}
 
 .page-about-us .page-intro {
   margin-bottom: 119px;
@@ -4595,6 +4602,7 @@ li.menu-item-has-children>a::after {
 
 .published__wrap {
   display: flex;
+  align-items: flex-end;
 }
 
 .published__item {
