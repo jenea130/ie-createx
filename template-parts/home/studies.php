@@ -7,7 +7,7 @@ $background = $studies['background'];
 ?>
 <section class="studies">
     <div class="container">
-        <h2 class="studies__title title4Read"><?php echo $title; ?></h2>
+        <h2 class="studies__title title"><?php echo $title; ?></h2>
         <div class="studies__header">
             <div class="studies__arrow studies__arrow--prev">
                 <svg width="18" height="12" viewbox="0 0 18 12" xmlns="http://www.w3.org/2000/svg">
